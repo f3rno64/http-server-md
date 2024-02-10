@@ -13,23 +13,32 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
         with:
           version: 8
 
-      - name: Use Node.js 20
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm i
 
-      - name: Lint
-        run: pnpm lint
+      - name: Check Format
+        run: pnpm format:check
 
-      - name: Run Prettier Check
-        run: pnpm format:prettier:check
+      - name: Lint
+        run: pnpm lint:eslint
+
+      - name: Lint
+        run: pnpm lint:markdownlint
+
+      - name: Build
+        run: pnpm build
