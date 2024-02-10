@@ -6,7 +6,7 @@
   "author": "Cris Mihalache <me@f3rno.com>",
   "main": "./cli.js",
   "engines": {
-    "node": ">=11.14.0"
+    "node": ">=16.0.0"
   },
   "files": [
     "index.js",
