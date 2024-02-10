@@ -31,7 +31,7 @@ jobs:
         run: pnpm i
 
       - name: Check Format
-        run: pnpm format:check
+        run: pnpm format:prettier:check
 
       - name: Lint
         run: pnpm lint:eslint
