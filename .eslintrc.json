@@ -47,7 +47,7 @@
     "plugin:@fintechstudios/chai-as-promised/recommended"
   ],
   "rules": {
-    "semi": ["error", "never"],
+    "semi": 0,
     "indent": ["error", 2],
     "i18n-text/no-en": 0,
     "no-invalid-this": 0,
