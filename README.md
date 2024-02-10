@@ -12,16 +12,16 @@ Configurable static file server with markdown-it for parsing Markdown.
 ![npm badge](https://nodei.co/npm/serve-markdown-it.png?downloads=true&downloadRank=true&stars=true)
 
 ```bash
-yarn global add serve-markdown-it
+pnpm global add serve-markdown-it
 ```
 
 ### [Developing](#developing)
 
 ```bash
-yarn gen-readme // update README.md
-yarn docs // update DOCUMENTATION.md
-yarn test // lint & mocha
-yarn update-deps // bump all deps
+pnpm gen-readme // update README.md
+pnpm docs // update DOCUMENTATION.md
+pnpm test // lint & mocha
+pnpm update-deps // bump all deps
 ```
 
 ### [Release History](#release_history)

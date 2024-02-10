@@ -42,15 +42,18 @@
     "server"
   ],
   "scripts": {
-    "docs": "rm -rf DOCUMENTATION.md && ./node_modules/.bin/jsdoc2md -f index.js 'lib/**/*.js' > DOCUMENTATION.md",
-    "gen-readme": "rm README.md && node scripts/gen_readme.js",
-    "lint": "./node_modules/.bin/eslint package.json '*.js' lib test",
-    "release": "npm run update-version && git push origin master --follow-tags && npm publish",
+    "clean:readme": "rm -f README.md",
+    "build": "pnpm build:docs && pnpm build:readme",
+    "build:docs": "jsdoc2md -f index.js 'lib/**/*.js' > DOCUMENTATION.md",
+    "build:readme": "node ./scripts/gen_readme.js",
+    "lint": "eslint -f stylish --ext .js,.json package.json lib scripts test",
+    "lint:fix": "eslint --fix -f stylish --ext .js,.json package.json lib scripts test",
+    "prepare-release": "pnpm lint && pnpm build",
+    "release": "pnpm update-version && git push origin master --follow-tags && npm publish",
     "serve-docs": "node cli.js DOCUMENTATION.md",
-    "test": "npm run lint && npm run unit",
-    "unit": "NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive",
-    "update-deps": "./node_modules/.bin/updates -u -g -c",
-    "update-version": "./node_modules/.bin/standard-version"
+    "unit": "NODE_ENV=test nyc mocha --recursive",
+    "update-deps": "updates -u -g -c",
+    "update-version": "standard-version"
   },
   "dependencies": {
     "bluebird": "^3.7.2",
