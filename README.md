@@ -13,7 +13,7 @@
 ![npm badge](https://nodei.co/npm/http-server-md.png?downloads=true&downloadRank=true&stars=true)
 
 ```bash
-pnpm global add http-server-md
+pnpm add -g http-server-md
 ```
 
 ### [Developing](#developing)
