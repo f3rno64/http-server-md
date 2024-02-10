@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/f3rno/serve-markdown-it/compare/v1.0.5...v1.1.0) (2024-02-10)
+
+
+### Features
+
+* add GitHub CI and NPM Publish workflows ([6796324](https://github.com/f3rno/serve-markdown-it/commit/679632458148047ae653bb9a7d471423604b0689))
+* add linters & formatters that are used via a hook with lint-staged ([7c78b74](https://github.com/f3rno/serve-markdown-it/commit/7c78b74612d2e836262502cd5c93b4ab36e488a0))
+* **manifest:** upgrade min node version to v16 ([e6e938f](https://github.com/f3rno/serve-markdown-it/commit/e6e938f0bd73133f60b81fd2549c3c2cc6ccd068))
+* update .gitignore ([11cb966](https://github.com/f3rno/serve-markdown-it/commit/11cb966793e5eda0e45bd91d6e78ad8ef00f4390))
+* wrap y.parse() call in promise catch handler to log error in cli.js ([c1d56c6](https://github.com/f3rno/serve-markdown-it/commit/c1d56c65a46c2e70cdfb280dc6e2120b9972f8fc))
+
+
+### Bug Fixes
+
+* handle case where user config is missing template or md fields ([7a777f7](https://github.com/f3rno/serve-markdown-it/commit/7a777f77970810df732cf7030dfdb50f77cbfcc0))
+* replace ESM-only update-notifier with simple-update-notifier ([f96cc77](https://github.com/f3rno/serve-markdown-it/commit/f96cc772fc79186aa0f56012626a26b8a67c4ff7))
+
 ### [1.0.5](https://github.com/f3rno/serve-markdown-it/compare/v1.0.4...v1.0.5) (2020-07-04)
 
 
