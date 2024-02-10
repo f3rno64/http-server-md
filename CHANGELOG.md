@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/f3rno64/http-server-md/compare/v1.1.4...v1.1.5) (2024-02-10)
+
+
+### Bug Fixes
+
+* try "publish-with-pnpm" action from GH marketplace to fix auth issue ([fdeac45](https://github.com/f3rno64/http-server-md/commit/fdeac45c8822649fbfc773df254174fa0d327bb8))
+
 ### [1.1.4](https://github.com/f3rno64/http-server-md/compare/v1.1.3...v1.1.4) (2024-02-10)
 
 ### [1.1.3](https://github.com/f3rno64/http-server-md/compare/v1.1.2...v1.1.3) (2024-02-10)
