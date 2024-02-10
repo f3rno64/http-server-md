@@ -1,6 +1,6 @@
 # Configurable static file server that renders Markdown files to HTML
 
-> serve-markdown-it
+> http-server-md
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -10,10 +10,10 @@
 
 ## Installation
 
-![npm badge](https://nodei.co/npm/serve-markdown-it.png?downloads=true&downloadRank=true&stars=true)
+![npm badge](https://nodei.co/npm/http-server-md.png?downloads=true&downloadRank=true&stars=true)
 
 ```bash
-pnpm global add serve-markdown-it
+pnpm global add http-server-md
 ```
 
 ### [Developing](#developing)
@@ -47,8 +47,8 @@ more information.
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
-[npm-image]: https://img.shields.io/npm/v/serve-markdown-it.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/serve-markdown-it
-[npm-downloads]: https://img.shields.io/npm/dm/serve-markdown-it.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/f3rno/serve-markdown-it/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/f3rno/serve-markdown-it
+[npm-image]: https://img.shields.io/npm/v/http-server-md.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/http-server-md
+[npm-downloads]: https://img.shields.io/npm/dm/http-server-md.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/f3rno/http-server-md/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/f3rno/http-server-md

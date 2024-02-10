@@ -3,48 +3,48 @@
 const lib = require('./lib')
 
 /**
- * # sermit - `serve-markdown-it`.
+ * # httpmd - `http-server-md`.
  *
  * Description TODO.
  *
  * > Configurable static file server with markdown-it for parsing Markdown.
  *
- * @module serve-markdown-it
+ * @module http-server-md
  * @license MIT
- * @example <caption>sermit help</caption>
- * sermit [path] [options]
+ * @example <caption>httpmd help</caption>
+ * httpmd [path] [options]
  *
  * Serve local files
  *
  * Commands:
- *   sermit print-config            Log the merged configuration to the console
- *   sermit gen-config              Generate a new configuration file
- *   sermit render                  Render local files to static HTML
- *   sermit serve [path] [options]  Serve local files                     [default]
+ *   httpmd print-config            Log the merged configuration to the console
+ *   httpmd gen-config              Generate a new configuration file
+ *   httpmd render                  Render local files to static HTML
+ *   httpmd serve [path] [options]  Serve local files                     [default]
  *
  * Options:
  *   --log-level, -l  Log level, increase to debug
  *          [string] [choices: 'error', 'info', 'warn', 'debug'] [default: 'error']
  *   --path, -p       Root directory
- *     [string] [required] [default: '/home/user/code/personal/serve-markdown-it']
+ *     [string] [required] [default: '/home/user/code/personal/http-server-md']
  *   --help           Show help                                           [boolean]
  *   --version        Show version number                                 [boolean]
  *   --port           Port number to spawn HTTP server on
  *                                              [number] [required] [default: 8960]
  *
  * Examples:
- *   sermit gen-config > .sermitrc.json  Generate basic configuration
+ *   httpmd gen-config > .httpmdrc.json  Generate basic configuration
  *
- * @example <caption>sermit</caption>
- * [cli] › ★  star      read config from /.sermitrc.json
+ * @example <caption>httpmd</caption>
+ * [cli] › ★  star      read config from /.httpmdrc.json
  * [cli] › ★  star      using template default
  * [cli] › ★  star      using md plugin markdown-it-smartarrows
  * [cli] › ★  star      using md plugin markdown-it-anchor
  * [cli] › ★  star      using md plugin markdown-it-highlightjs
- * [cli] › ★  star      serving content from /home/user/code/personal/serve-markdown-it
+ * [cli] › ★  star      serving content from /home/user/code/personal/http-server-md
  * [cli] › ★  star      listening at http://localhost:8960
  *
- * @example <caption>sermit gen-config > .sermitrc.json</caption>
+ * @example <caption>httpmd gen-config > .httpmdrc.json</caption>
  * {
  *   minify: true,
  *   excludeGitIgnore: true,

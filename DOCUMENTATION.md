@@ -1,8 +1,8 @@
 ## Modules
 
 <dl>
-<dt><a href="#module_serve-markdown-it">serve-markdown-it</a></dt>
-<dd><h1 id="sermit---serve-markdown-it">sermit - <code>serve-markdown-it</code>.</h1>
+<dt><a href="#module_http-server-md">http-server-md</a></dt>
+<dd><h1 id="httpmd---http-server-md">httpmd - <code>http-server-md</code>.</h1>
 <p>Description TODO.</p>
 <blockquote>
 <p>Configurable static file server with markdown-it for parsing Markdown.</p>
@@ -17,11 +17,11 @@
 <dd><p>Resolve the runtime configuration, loading the first user config file found.
 Searches directories up the path for any of the following files:</p>
 <ul>
-<li><code>.sermitrc</code></li>
-<li><code>.sermitrc.js</code></li>
-<li><code>.sermitrc.json</code></li>
-<li><code>.sermitrc.yaml</code></li>
-<li><code>.sermitrc.yml</code></li>
+<li><code>.httpmdrc</code></li>
+<li><code>.httpmdrc.js</code></li>
+<li><code>.httpmdrc.json</code></li>
+<li><code>.httpmdrc.yaml</code></li>
+<li><code>.httpmdrc.yml</code></li>
 </ul>
 <p>Any discovered user config file is merged with the default
 <a href="#Sermit..DefaultConfig">DefaultConfig</a> object.</p>
@@ -47,52 +47,52 @@ the file explorer if allowed by the configuration.</p>
 </dd>
 </dl>
 
-<a name="module_serve-markdown-it"></a>
+<a name="module_http-server-md"></a>
 
-## serve-markdown-it
-# sermit - `serve-markdown-it`.
+## http-server-md
+# httpmd - `http-server-md`.
 
 Description TODO.
 
 > Configurable static file server with markdown-it for parsing Markdown.
 
 **License**: MIT  
-**Example** *(sermit help)*  
+**Example** *(httpmd help)*  
 ```js
-sermit [path] [options]
+httpmd [path] [options]
 
 Serve local files
 
 Commands:
-  sermit print-config            Log the merged configuration to the console
-  sermit gen-config              Generate a new configuration file
-  sermit render                  Render local files to static HTML
-  sermit serve [path] [options]  Serve local files                     [default]
+  httpmd print-config            Log the merged configuration to the console
+  httpmd gen-config              Generate a new configuration file
+  httpmd render                  Render local files to static HTML
+  httpmd serve [path] [options]  Serve local files                     [default]
 
 Options:
   --log-level, -l  Log level, increase to debug
          [string] [choices: 'error', 'info', 'warn', 'debug'] [default: 'error']
   --path, -p       Root directory
-    [string] [required] [default: '/home/user/code/personal/serve-markdown-it']
+    [string] [required] [default: '/home/user/code/personal/http-server-md']
   --help           Show help                                           [boolean]
   --version        Show version number                                 [boolean]
   --port           Port number to spawn HTTP server on
                                              [number] [required] [default: 8960]
 
 Examples:
-  sermit gen-config > .sermitrc.json  Generate basic configuration
+  httpmd gen-config > .httpmdrc.json  Generate basic configuration
 ```
-**Example** *(sermit)*  
+**Example** *(httpmd)*  
 ```js
-[cli] › ★  star      read config from /.sermitrc.json
+[cli] › ★  star      read config from /.httpmdrc.json
 [cli] › ★  star      using template default
 [cli] › ★  star      using md plugin markdown-it-smartarrows
 [cli] › ★  star      using md plugin markdown-it-anchor
 [cli] › ★  star      using md plugin markdown-it-highlightjs
-[cli] › ★  star      serving content from /home/user/code/personal/serve-markdown-it
+[cli] › ★  star      serving content from /home/user/code/personal/http-server-md
 [cli] › ★  star      listening at http://localhost:8960
 ```
-**Example** *(sermit gen-config &gt; .sermitrc.json)*  
+**Example** *(httpmd gen-config &gt; .httpmdrc.json)*  
 ```js
 {
   minify: true,
@@ -184,11 +184,11 @@ Examples:
 Resolve the runtime configuration, loading the first user config file found.
 Searches directories up the path for any of the following files:
 
-- `.sermitrc`
-- `.sermitrc.js`
-- `.sermitrc.json`
-- `.sermitrc.yaml`
-- `.sermitrc.yml`
+- `.httpmdrc`
+- `.httpmdrc.js`
+- `.httpmdrc.json`
+- `.httpmdrc.yaml`
+- `.httpmdrc.yml`
 
 Any discovered user config file is merged with the default
 [DefaultConfig](#Sermit..DefaultConfig) object.

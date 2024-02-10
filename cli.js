@@ -17,7 +17,7 @@ updateNotifier({ pkg })
 const logLevels = _uniq(_values(signaleTypes).map(({ logLevel }) => logLevel))
 
 const y = yArgs
-  .scriptName('sermit')
+  .scriptName('httpmd')
   .option('log-level', {
     describe: 'Log level, increase to debug',
     default: 'error',
@@ -80,7 +80,7 @@ const y = yArgs
 
     argv.path = basePath
   })
-  .example('$0 gen-config > .sermitrc.json', 'Generate basic configuration')
+  .example('$0 gen-config > .httpmdrc.json', 'Generate basic configuration')
   .showHelpOnFail(false, 'Specify --help for available options')
   .help()
   .version()

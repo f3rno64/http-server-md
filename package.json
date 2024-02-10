@@ -1,5 +1,5 @@
 {
-  "name": "serve-markdown-it",
+  "name": "http-server-md",
   "version": "1.1.1",
   "description": "Configurable static file server with markdown-it for parsing Markdown.",
   "keywords": [
@@ -9,19 +9,16 @@
     "utility",
     "markdown",
     "markdown-it",
-    "serve-markdown-it",
-    "sermit",
-    "sermit-template",
-    "sermit-config",
-    "server"
+    "http-server-md",
+    "markdown-server"
   ],
-  "homepage": "https://github.com/f3rno/serve-markdown-it",
+  "homepage": "https://github.com/f3rno/http-server-md",
   "bugs": {
-    "url": "https://github.com/f3rno/serve-markdown-it/issues"
+    "url": "https://github.com/f3rno/http-server-md/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/f3rno/serve-markdown-it.git"
+    "url": "https://github.com/f3rno/http-server-md.git"
   },
   "license": "MIT",
   "author": "Cris Mihalache <me@f3rno.com>",
@@ -38,7 +35,7 @@
   },
   "main": "./cli.js",
   "bin": {
-    "sermit": "cli.js"
+    "http-server-md": "cli.js"
   },
   "directories": {
     "lib": "lib",
