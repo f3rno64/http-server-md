@@ -34,10 +34,10 @@ jobs:
         run: pnpm format:prettier:check
 
       - name: Lint
-        run: pnpm lint:eslint:check
+        run: pnpm lint:eslint
 
       - name: Lint
-        run: pnpm lint:markdownlint:check
+        run: pnpm lint:markdownlint
 
       - name: Build
         run: pnpm build
