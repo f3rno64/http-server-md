@@ -56,9 +56,7 @@ const y = yArgs
   .middleware(async (argv) => {
     const { l, path: rawPath } = argv
     const cwd = process.cwd()
-    const basePath = rawPath[0] === '/'
-      ? rawPath
-      : path.join(cwd, rawPath)
+    const basePath = rawPath[0] === '/' ? rawPath : path.join(cwd, rawPath)
 
     const config = await getConfig({ basePath })
     const { state } = config
@@ -75,11 +73,11 @@ const y = yArgs
     })
 
     // eslint-why save config on args context
-    /* eslint-disable-next-line require-atomic-updates */
+
     argv.config = config
 
     // eslint-why save config on args context
-    /* eslint-disable-next-line require-atomic-updates */
+
     argv.path = basePath
   })
   .example('$0 gen-config > .sermitrc.json', 'Generate basic configuration')
@@ -88,6 +86,8 @@ const y = yArgs
   .version()
   .recommendCommands()
 
-commands.forEach((def) => { y.command(def) })
+commands.forEach((def) => {
+  y.command(def)
+})
 
 y.parse()

@@ -1,12 +1,14 @@
 ---
 sudo: false
-os: linux
-cache: pnpm
-language: node_js
+os: 'linux'
+cache: 'pnpm'
+language: 'node_js'
+
 node_js:
-  - 14
+  - 16
 
 install:
-  - pnpm i
+  - 'pnpm i'
+
 script:
-  - pnpm test
+  - 'pnpm test'

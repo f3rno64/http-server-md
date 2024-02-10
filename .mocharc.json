@@ -1,0 +1,10 @@
+{
+  "diff": true,
+  "full-trace": true,
+  "package": "./package.json",
+  "parallel": true,
+  "recursive": true,
+  "extension": ["js"],
+  "spec": "tests/**/*.js",
+  "watch-files": ["lib/**/*.js"]
+}

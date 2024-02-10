@@ -1,0 +1,12 @@
+!.*.json
+**/node_modules
+/.husky
+
+.eslintrc.json
+.lintstagedrc.json
+.mocharc.json
+.nycrc.json
+.prettierignore
+.prettierrc.json
+.sermitrc.json
+.renovaterc.json

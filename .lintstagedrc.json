@@ -1,0 +1,5 @@
+{
+  "*.{json,js}": ["eslint", "prettier --list-different"],
+  "*.yml": ["yamllint -f auto -s"],
+  "README.md": ["markdownlint"]
+}

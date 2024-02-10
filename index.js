@@ -1,5 +1,4 @@
 // eslint-why docs
-/* eslint-disable max-len */
 
 const lib = require('./lib')
 
