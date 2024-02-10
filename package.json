@@ -12,16 +12,16 @@
     "http-server-md",
     "markdown-server"
   ],
-  "homepage": "https://github.com/f3rno/http-server-md",
+  "homepage": "https://github.com/f3rno64/http-server-md",
   "bugs": {
-    "url": "https://github.com/f3rno/http-server-md/issues"
+    "url": "https://github.com/f3rno64/http-server-md/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/f3rno/http-server-md.git"
+    "url": "https://github.com/f3rno64/http-server-md.git"
   },
   "license": "MIT",
-  "author": "Cris Mihalache <me@f3rno.com>",
+  "author": "Cris Mihalache <f3rno64@gmail.com>",
   "exports": {
     ".": "./index.js",
     "./cli": "./cli.js",

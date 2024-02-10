@@ -132,7 +132,7 @@ const lib = require('./lib')
 
 /**
  * @external serve-markdown-it-template-default
- * @see https://github.com/f3rno/serve-markdown-it-template-default
+ * @see https://github.com/f3rno64/serve-markdown-it-template-default
  */
 
 /**

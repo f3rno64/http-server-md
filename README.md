@@ -50,5 +50,5 @@ more information.
 [npm-image]: https://img.shields.io/npm/v/http-server-md.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/http-server-md
 [npm-downloads]: https://img.shields.io/npm/dm/http-server-md.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/f3rno/http-server-md/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/f3rno/http-server-md
+[travis-image]: https://img.shields.io/travis/f3rno64/http-server-md/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/f3rno64/http-server-md
