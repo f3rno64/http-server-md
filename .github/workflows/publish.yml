@@ -1,5 +1,5 @@
 ---
-name: Publish to NPM
+name: Publish to NPM Registry
 
 env:
   HUSKY: 0
@@ -10,25 +10,39 @@ on:
       - '*'
 
 jobs:
-  release:
+  publish:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
-      - name: Install Node.js
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
 
-      - uses: pnpm/action-setup@v3
-        with:
-          version: latest
-          run_install: true
+      - name: Install dependencies
+        run: pnpm i
 
-      - name: Build 🔨
+      - name: Check Format
+        run: pnpm format:check
+
+      - name: Lint
+        run: pnpm lint:eslint:check
+
+      - name: Lint
+        run: pnpm lint:markdownlint:check
+
+      - name: Build
         run: pnpm build
 
-      - uses: simenandre/publish-with-pnpm@v1
-        with:
-          npm-auth-token: ${{ secrets.NPM_TOKEN }}
+      - name: Publish
+        run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
