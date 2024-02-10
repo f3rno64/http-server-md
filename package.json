@@ -1,7 +1,7 @@
 {
   "name": "http-server-md",
   "version": "1.1.1",
-  "description": "A highly configurable http server that servers directories, images, HTML files, text files, and renders markdown files with markdown-it to HTML on the fly.",
+  "description": "A configurable HTTP server that serves markdown files rendered to HTML with markdown-it",
   "keywords": [
     "md",
     "cli",

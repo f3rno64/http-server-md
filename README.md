@@ -1,4 +1,4 @@
-# An configurable HTTP server that serves markdown files rendered to HTML with [**markdown-it**][markdown-it-url]
+# A configurable HTTP server that serves markdown files rendered to HTML with [**markdown-it**][markdown-it-url]
 
 > **http-server-md**
 
