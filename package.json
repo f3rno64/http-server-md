@@ -1,6 +1,6 @@
 {
   "name": "http-server-md",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A configurable HTTP server that serves markdown files rendered to HTML with markdown-it",
   "keywords": [
     "md",
