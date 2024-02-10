@@ -90,4 +90,8 @@ commands.forEach((def) => {
   y.command(def)
 })
 
-y.parse()
+// eslint-disable-next-line github/no-then
+y.parse().catch((err) => {
+  // eslint-disable-next-line no-console
+  console.error(err.stack)
+})
