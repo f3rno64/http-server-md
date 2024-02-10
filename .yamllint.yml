@@ -2,6 +2,7 @@
 extends: 'default'
 ignore: |
   pnpm-lock.yaml
+  .github
 rules:
   anchors:
     forbid-undeclared-aliases: true
