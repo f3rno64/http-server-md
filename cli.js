@@ -5,14 +5,14 @@ const yArgs = require('yargs')
 const colors = require('colors')
 const { Signale } = require('signale')
 const signaleTypes = require('signale/types')
-const updateNotifier = require('update-notifier')
 const _uniq = require('lodash/uniq')
 const _values = require('lodash/values')
 const getConfig = require('./lib/config')
 const commands = require('./lib/commands')
-const manifest = require('./package.json')
+const pkg = require('./package.json')
+const updateNotifier = require('simple-update-notifier')
 
-updateNotifier({ pkg: manifest }).notify()
+updateNotifier({ pkg })
 
 const logLevels = _uniq(_values(signaleTypes).map(({ logLevel }) => logLevel))
 
