@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.9](https://github.com/f3rno64/http-server-md/compare/v1.1.8...v1.1.9) (2024-02-10)
+
+
+### Bug Fixes
+
+* correct lint script names in publish workflow ([25ff465](https://github.com/f3rno64/http-server-md/commit/25ff465e4e9ebf07d3fb74038ed90b5faded6844))
+
 ### [1.1.8](https://github.com/f3rno64/http-server-md/compare/v1.1.7...v1.1.8) (2024-02-10)
 
 
