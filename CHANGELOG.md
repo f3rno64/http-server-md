@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/f3rno64/http-server-md/compare/v1.1.1...v1.1.2) (2024-02-10)
+
+
+### Bug Fixes
+
+* match description in manifest with readme title ([28aae38](https://github.com/f3rno64/http-server-md/commit/28aae38201a8796ea0b440c08dfc68592a2d2102))
+* **README:** pnpm global install command ([543fb7f](https://github.com/f3rno64/http-server-md/commit/543fb7fd027ab9dc6846d190864175950edd3c91))
+
 ### [1.1.1](https://github.com/f3rno64/http-server-md/compare/v1.1.0...v1.1.1) (2024-02-10)
 
 ## [1.1.0](https://github.com/f3rno64/http-server-md/compare/v1.0.5...v1.1.0) (2024-02-10)
