@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x, 18.x, 20.x]
+        node-version: [18.x, 20.x]
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
@@ -30,8 +30,11 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
-      - name: Test
-        run: pnpm test
+      - name: Lint
+        run: pnpm lint
+
+      - name: Run Prettier Check
+        run: pnpm format:prettier:check
 
       - name: Build
         run: pnpm build
