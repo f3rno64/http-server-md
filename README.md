@@ -1,6 +1,6 @@
-# Configurable static file server that renders Markdown files to HTML
+# An configurable HTTP server that serves markdown files rendered to HTML with [**markdown-it**][markdown-it-url]
 
-> http-server-md
+> **http-server-md**
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -10,7 +10,7 @@
 
 ## Installation
 
-![npm badge](https://nodei.co/npm/http-server-md.png?downloads=true&downloadRank=true&stars=true)
+![npm badge][npm-badge-url]
 
 ```bash
 pnpm add -g http-server-md
@@ -50,5 +50,7 @@ more information.
 [npm-image]: https://img.shields.io/npm/v/http-server-md.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/http-server-md
 [npm-downloads]: https://img.shields.io/npm/dm/http-server-md.svg?style=flat-square
+[npm-badge-url]: https://nodei.co/npm/http-server-md.png?downloads=true&downloadRank=true&stars=true
 [travis-image]: https://img.shields.io/travis/f3rno64/http-server-md/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/f3rno64/http-server-md
+[markdown-it-url]: https://github.com/markdown-it/markdown-it
