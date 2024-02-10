@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.7](https://github.com/f3rno64/http-server-md/compare/v1.1.6...v1.1.7) (2024-02-10)
+
+
+### Bug Fixes
+
+* try yet another publish workflow... ([1b0075b](https://github.com/f3rno64/http-server-md/commit/1b0075b588c7bd6b0b82d4975e0029edd8c0c0cb))
+
 ### [1.1.6](https://github.com/f3rno64/http-server-md/compare/v1.1.5...v1.1.6) (2024-02-10)
 
 
