@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.13](https://github.com/f3rno64/http-server-md/compare/v1.1.12...v1.1.13) (2024-02-14)
+
+
+### Bug Fixes
+
+* add pnpm-lock.yaml to .prettierignore ([41b6224](https://github.com/f3rno64/http-server-md/commit/41b6224d17c0c5f1f8d2858dd91ff2fe7789a98d))
+
 ### [1.1.12](https://github.com/f3rno64/http-server-md/compare/v1.1.11...v1.1.12) (2024-02-14)
 
 ### [1.1.11](https://github.com/f3rno64/http-server-md/compare/v1.1.10...v1.1.11) (2024-02-10)
